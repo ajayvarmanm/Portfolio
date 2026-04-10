@@ -313,6 +313,9 @@
       text-align: center; padding: 2rem;
       color: var(--muted); font-size: 0.85rem;
     }
+    
+    .footer-socials { display: flex; gap: 2rem; justify-content: center; margin-bottom: 1rem;margin-top: 1rem; }
+
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
@@ -333,7 +336,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">AV</div>
+  <div class="nav-logo">Welcome</div>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -353,12 +356,12 @@
         <p class="home-greeting">Hello, I'm</p>
         <h1 class="home-name">AJAYVARMAN M</h1>
         <p class="home-role">Full Stack Developer</p>
-        <p class="home-desc">Building scalable web applications with modern technologies. Passionate about creating efficient solutions and learning new skills.</p>
+        <p class="home-desc">Building scalable web applications with modern technologies.Passionate about developing real-world full stack applications and solving business problems.</p>
         <div class="home-socials">
-          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:ajayvarman@example.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/ajayvarman-m-" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ajayvarmanm" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/freaky_ajay/" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:ajayvarman@zohomail.in" class="social-btn"><i class="fas fa-envelope"></i></a>
         </div>
         <div class="home-btns">
           <a href="#contact" class="btn-primary">Get In Touch</a>
@@ -380,7 +383,7 @@
     <h2 class="section-title">About <span>Me</span></h2>
     <div class="title-line"></div>
     <div class="about-bio">
-      Final-year Computer Science Engineering student with hands-on experience in Python Full Stack Development through an active internship at Besant Technologies, Bangalore. Skilled in building web applications using Python, Django, MySQL, HTML, CSS, and JavaScript. Seeking an entry-level Full Stack Developer role to contribute to real-world products, grow under experienced engineers, and deliver efficient, scalable solutions.
+      Final-year Computer Science Engineering student with hands-on experience in Python Full Stack Development through an active internship at Besant Technologies, Bangalore. Skilled in building web applications using Python, Django, MySQL,React.js HTML, CSS, and JavaScript. Seeking an entry-level Full Stack Developer role to contribute to real-world products, grow under experienced engineers, and deliver efficient, scalable solutions.
     </div>
     <div class="about-cards">
       <div class="about-card">
@@ -411,23 +414,26 @@
       <div class="edu-card">
         <div>
           <h3>B.E – Computer Science and Engineering</h3>
-          <p class="school">Sri Eshwar College of Engineering, Coimbatore</p>
+          <p class="school">PSN Institute of Technology and Science,Tirunelveli.</p>
+          <p class="school">CGPA: 8.1/10</p>
         </div>
-        <span class="edu-year">2021 – 2025</span>
+        <span class="edu-year">2022 – 2026</span>
       </div>
       <div class="edu-card">
         <div>
           <h3>Higher Secondary (12th)</h3>
-          <p class="school">Government Higher Secondary School</p>
+          <p class="school">Government Higher Secondary School,Ramanathapuram</p>
+          <p class="school">Percentage: 74%</p>
         </div>
-        <span class="edu-year">2020 – 2021</span>
+        <span class="edu-year">2021 – 2022</span>
       </div>
       <div class="edu-card">
         <div>
           <h3>SSLC (10th)</h3>
-          <p class="school">Government High School</p>
+          <p class="school">Government High School,Ramanathapuram</p>
+          <p class="school">Percentage: 92%</p>
         </div>
-        <span class="edu-year">2018 – 2019</span>
+        <span class="edu-year">2019 – 2020</span>
       </div>
     </div>
   </div>
@@ -479,6 +485,10 @@
         <div class="skill-top"><span class="skill-name">REST API</span><span class="skill-pct">80%</span></div>
         <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
       </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">Machine Learning</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -499,7 +509,7 @@
           <span class="tag">Python</span>
           <span class="tag">MySQL</span>
         </div>
-        <a href="#" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+        <a href="https://github.com/ajayvarmanm/vehicle-management-system" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
       </div>
       <div class="project-card">
         <div class="project-header">
@@ -513,7 +523,21 @@
           <span class="tag">Bootstrap</span>
           <span class="tag">MySQL</span>
         </div>
-        <a href="#" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+        <a href="https://github.com/ajayvarmanm/CRM-APPLICATION-FOR-JEWEL-MANAGEMENT" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+            <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Fraud Detection in Banking Transactions using AI</h3>
+          <i class="fab fa-github project-icon"></i>
+        </div>
+        <p class="project-desc">Developed a project uses Logistic Regression to detect fraudulent banking transactions. The model classifies transactions as fraud (1) or non-fraud (0).</p>
+        <div class="project-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Pandas</span>
+        </div>
+        <a href="https://github.com/ajayvarmanm/fraud-detection-ml" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
       </div>
     </div>
   </div>
@@ -530,9 +554,19 @@
           <p class="intern-role">Python Full Stack Developer Intern</p>
           <p class="intern-company">Besant Technologies, Bangalore</p>
         </div>
-        <span class="intern-period">2024 – Present</span>
+        <span class="intern-period">Jan 2026 – April 2026</span>
       </div>
       <p class="intern-desc">Gaining hands-on experience in full stack web development using Python, Django, MySQL, HTML, CSS, Bootstrap, and JavaScript. Working on real-world projects including building RESTful APIs, designing relational databases, and developing responsive frontends. Collaborating in a professional environment to deliver production-ready features.</p>
+    </div>
+    <div class="intern-card">
+      <div class="intern-header">
+        <div>
+          <p class="intern-role">Robotics Developer Intern</p>
+          <p class="intern-company">Technovation, Tirunelveli</p>
+        </div>
+        <span class="intern-period">Feb 2024</span>
+      </div>
+      <p class="intern-desc">Assisted in testing modules and understanding hardware-software integration and Machine Learning, Gained exposure to real-time problem solving in robotics applications.</p>
     </div>
   </div>
 </section>
@@ -562,7 +596,13 @@
 </section>
 
 <footer>
-  <p>© 2024 Ajayvarman M. All rights reserved.</p>
+  <p>© 2026 Ajayvarman M. All rights reserved.</p>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/ajayvarman-m-" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/ajayvarmanm" class="social-btn"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/freaky_ajay/" class="social-btn"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:ajayvarman@zohomail.in" class="social-btn"><i class="fas fa-envelope"></i></a>
+  </div>
 </footer>
 
 <script>
