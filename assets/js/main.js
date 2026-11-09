@@ -1,5 +1,6 @@
-// Homepage interactions: keep motion lightweight and accessible.
+// Lightweight homepage enhancements.
 document.documentElement.classList.add("js-ready");
 
-// Update the browser tab title's year-independent content if needed in later phases.
-// No third-party JavaScript is required for the homepage.
+// Keep the footer year current without requiring a third-party library.
+const year = document.getElementById("current-year");
+if (year) year.textContent = new Date().getFullYear();
