@@ -463,3 +463,19 @@ h1 {
   .footer-inner p { order: 3; width: 100%; }
   .footer-bottom { align-items: flex-start; flex-direction: column; gap: 7px; }
 }
+
+
+/* Contact form */
+.contact-form { display: grid; gap: 10px; padding: 22px; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.025); }
+.contact-form label { margin-top: 5px; color: var(--muted); font-size: 11px; font-weight: 600; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px 13px; border: 1px solid var(--border); border-radius: 8px; outline: none; color: var(--text); background: rgba(0,0,0,.18); font: inherit; font-size: 13px; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(167,139,250,.1); }
+.contact-form textarea { resize: vertical; min-height: 110px; }
+.contact-form button { justify-self: start; margin-top: 8px; cursor: pointer; }
+.contact-form button:disabled { opacity: .65; cursor: wait; }
+.form-status { margin: 2px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.form-status.is-error { color: #fca5a5; }
+.form-status.is-success { color: #86efac; }
+.form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.resume-download { grid-column: 2; justify-self: start; margin-top: 2px; padding: 7px 11px; border-radius: 6px; color: var(--accent); background: rgba(167,139,250,.1); font-size: 10px; font-weight: 700; text-decoration: none; }
+.resume-download:hover { background: rgba(167,139,250,.18); }
