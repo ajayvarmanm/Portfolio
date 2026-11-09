@@ -14,7 +14,7 @@ The Django API is separate from GitHub Pages. Before deploying:
 
 1. Create a PostgreSQL database and copy its internal connection URL into `DATABASE_URL`.
 2. Create a Python web service from this repository's approved branch.
-3. Build command: `pip install -r requirements.txt && python manage.py migrate`
+3. Build command: `pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate`
 4. Start command: `gunicorn portfolio_backend.wsgi:application`
 5. Configure environment variables:
    - `DJANGO_SECRET_KEY`: a newly generated, private Django secret.
