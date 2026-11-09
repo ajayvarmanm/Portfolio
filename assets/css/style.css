@@ -479,3 +479,33 @@ h1 {
 .form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .resume-download { grid-column: 2; justify-self: start; margin-top: 2px; padding: 7px 11px; border-radius: 6px; color: var(--accent); background: rgba(167,139,250,.1); font-size: 10px; font-weight: 700; text-decoration: none; }
 .resume-download:hover { background: rgba(167,139,250,.18); }
+
+
+/* Responsive refinements: navigation, contact layout and narrow screens */
+@media (max-width: 900px) {
+  .contact-layout { gap: 34px; }
+  .contact-copy h2 { font-size: clamp(36px, 6vw, 54px); }
+}
+@media (max-width: 680px) {
+  .nav { min-height: 0; flex-wrap: wrap; gap: 10px 16px; padding-top: 13px; padding-bottom: 12px; }
+  .nav-right { width: 100%; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .nav-links { display: flex; order: 2; width: 100%; gap: 20px; overflow-x: auto; padding: 7px 1px 3px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { flex: 0 0 auto; font-size: 12px; }
+  .nav-contact { order: 1; margin-left: auto; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-form { min-width: 0; padding: 18px; }
+  .contact-row { min-width: 0; }
+  .contact-row strong { min-width: 0; overflow-wrap: anywhere; }
+}
+@media (max-width: 420px) {
+  .container { width: calc(100% - 32px); }
+  .brand-name { letter-spacing: .12em; }
+  .hero-actions { gap: 9px; }
+  .hero-actions .button { width: 100%; }
+  .floating-card-top { left: -7%; }
+  .floating-card-bottom { right: -7%; }
+  .resume-card { grid-template-columns: 40px minmax(0, 1fr); gap: 12px; }
+  .resume-icon { width: 40px; height: 40px; }
+  .contact-row { gap: 8px; }
+}
