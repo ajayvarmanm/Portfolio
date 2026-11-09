@@ -26,6 +26,16 @@ The Django API is separate from GitHub Pages. Before deploying:
 
 Do not commit production secrets or database URLs. SQLite is retained only as a local-development fallback; use persistent PostgreSQL for production so contact submissions are not lost when a host restarts.
 
+### Local development and tests
+
+1. Create and activate a virtual environment.
+2. Install dependencies: `pip install -r requirements.txt`.
+3. Run tests with the local development flag: `DJANGO_DEBUG=True python manage.py test contact -v 2`.
+4. Start locally with `DJANGO_DEBUG=True python manage.py runserver`.
+5. Create an admin login with `DJANGO_DEBUG=True python manage.py createsuperuser`, then open `/admin/`.
+
+Production requires a private `DJANGO_SECRET_KEY`; the application intentionally refuses to start in production mode without it. The contact API validates the allowed browser origin, JSON shape, field lengths and email format, ignores submissions that fill the hidden honeypot, and applies a basic limit of five valid messages per IP per hour. The default local-memory throttle is suitable for a single service instance; use a shared cache such as Redis if you later scale to multiple instances.
+
 ## Contact form
 
 The form validates input on the server, checks the browser origin against `FRONTEND_ORIGINS`, limits request size and message lengths, and includes a honeypot field. It stores submissions in the `Contact` model, viewable through Django admin after an admin user is created.
